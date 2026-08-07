@@ -657,6 +657,7 @@ nav ul{
     font-size:22px;
     box-shadow:0 4px 10px rgba(0,0,0,.3);
     transition:.3s;
+    display:block !important;
 }
 
 #topBtn:hover{
