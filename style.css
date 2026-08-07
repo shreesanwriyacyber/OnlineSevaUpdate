@@ -202,3 +202,39 @@ button:hover{
     transform:translateX(5px);
     transition:.3s;
 }
+.categories{
+    padding:60px 20px;
+    background:#f5f7fb;
+}
+
+.categories h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:35px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.category-card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+}
+
+.category-card h3{
+    margin-bottom:10px;
+    color:#0d6efd;
+}
