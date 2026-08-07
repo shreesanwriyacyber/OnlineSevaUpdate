@@ -603,10 +603,9 @@ nav ul{
 
 .slider img{
     width:100%;
-    height:420px;
-    object-fit:cover;
+    height:auto;
+    display:block;
 }
-
 @media(max-width:768px){
 
 .slider img{
