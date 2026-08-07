@@ -52,21 +52,35 @@ function searchWebsite() {
     }
 
 }
-// Back To Top Button
-
-const topButton = document.getElementById("topBtn");
-
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
-        topButton.style.display = "block";
-    } else {
-        topButton.style.display = "none";
-    }
-});
-
-function topFunction() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+// searchWebsite() function
+function searchWebsite() {
+   
 }
+
+// Back To Top Button
+window.addEventListener("load", function () {
+
+    const topButton = document.getElementById("topBtn");
+
+    if (!topButton) return;
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 100) {
+            topButton.style.display = "block";
+        } else {
+            topButton.style.display = "none";
+        }
+
+    });
+
+    topButton.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+});
