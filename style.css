@@ -259,3 +259,66 @@ button:hover{
     width:60%;
     border:1px solid rgba(255,255,255,.3);
 }
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media (max-width:768px){
+
+.logo h1{
+    font-size:28px;
+}
+
+.logo p{
+    font-size:14px;
+}
+
+.hero{
+    padding:40px 20px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero-buttons a{
+    width:100%;
+}
+
+.cards,
+.category-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.card,
+.category-card{
+    width:100%;
+}
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box input,
+.search-box button{
+    width:100%;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
