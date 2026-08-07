@@ -54,27 +54,19 @@ function searchWebsite() {
 }
 // Back To Top Button
 
-let topButton = document.getElementById("topBtn");
+const topButton = document.getElementById("topBtn");
 
-window.onscroll = function () {
-
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
         topButton.style.display = "block";
-
     } else {
-
         topButton.style.display = "none";
-
     }
-
-};
+});
 
 function topFunction() {
-
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
-
 }
