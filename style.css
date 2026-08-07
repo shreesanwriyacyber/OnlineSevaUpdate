@@ -638,3 +638,27 @@ nav ul{
     height: 32px;
     filter: invert(1);
 }
+/* Back To Top */
+
+#topBtn{
+    display:none;
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    z-index:9999;
+    border:none;
+    outline:none;
+    background:#0d6efd;
+    color:white;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    font-size:22px;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+#topBtn:hover{
+    background:#0047b3;
+}
