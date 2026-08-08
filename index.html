@@ -278,5 +278,61 @@
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
 </a>
 <button id="topBtn" onclick="topFunction()">&#8593;</button>
+<script>
+function searchWebsite() {
+    const query = document.getElementById("searchInput").value
+        .trim()
+        .toLowerCase();
+
+    if (!query) {
+        alert("Please enter something to search.");
+        return;
+    }
+
+    const pages = [
+        {
+            name: "Jobs",
+            keywords: ["job", "jobs", "rojgar", "vacancy", "bharti", "recruitment"],
+            url: "jobs.html"
+        },
+        {
+            name: "Results",
+            keywords: ["result", "results", "exam result", "result check"],
+            url: "results.html"
+        },
+        {
+            name: "Admit Card",
+            keywords: ["admit", "admit card", "hall ticket", "call letter"],
+            url: "admit-card.html"
+        },
+        {
+            name: "Yojana",
+            keywords: ["yojana", "scheme", "government scheme", "sarkari yojana"],
+            url: "yojana.html"
+        },
+        {
+            name: "Samagra",
+            keywords: ["samagra", "samagra id", "samagra portal"],
+            url: "samagra.html"
+        },
+        {
+            name: "CSC",
+            keywords: ["csc", "common service center", "digital seva"],
+            url: "csc.html"
+        }
+    ];
+
+    const found = pages.find(page =>
+        page.name.toLowerCase().includes(query) ||
+        page.keywords.some(keyword => keyword.includes(query))
+    );
+
+    if (found) {
+        window.location.href = found.url;
+    } else {
+        alert("No results found for: " + query);
+    }
+}
+</script>
 </body>
 </html>
