@@ -411,28 +411,204 @@
 
     </div>
 
+    </section>
 
-    <!-- Back -->
+/* =========================
+   JOB DETAILS PAGE DESIGN
+========================= */
 
-    <div style="text-align:center; margin:30px 0;">
+body {
+    margin: 0;
+    background: #f4f7fb;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
 
-        <a href="jobs.html"
-           style="display:inline-block;
-                  padding:12px 25px;
-                  background:#0d6efd;
-                  color:white;
-                  text-decoration:none;
-                  border-radius:6px;">
+/* Main Header */
+header {
+    background: linear-gradient(135deg, #0757c9, #1688f5);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
 
-            ← Back to Latest Jobs
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
 
-        </a>
+header p {
+    margin: 6px 0 0;
+    font-size: 16px;
+}
 
-    </div>
+/* Main Content */
+.latest-updates {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 0 18px;
+}
 
-</section>
+/* Main Page Title */
+.latest-updates > h2:first-child {
+    background: white;
+    color: #0757c9;
+    text-align: center;
+    padding: 22px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top: 5px solid #0d6efd;
+}
 
+/* Intro Text */
+.latest-updates > p {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
 
+/* Every Information Section */
+.update {
+    background: white;
+    margin: 22px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    border-left: 5px solid #0d6efd;
+}
+
+/* Section Heading */
+.update h2 {
+    margin: -25px -25px 20px -25px;
+    padding: 14px 20px;
+    background: #eaf3ff;
+    color: #0757c9;
+    border-bottom: 1px solid #d7e7fb;
+    border-radius: 12px 12px 0 0;
+    font-size: 22px;
+}
+
+/* Sub Headings */
+.update h3 {
+    color: #0757c9;
+    margin-top: 22px;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+/* Lists */
+.update ul,
+.update ol {
+    padding-left: 25px;
+}
+
+.update li {
+    margin-bottom: 9px;
+}
+
+/* Vacancy Table */
+.update table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background: white;
+}
+
+.update table th {
+    background: #0d6efd;
+    color: white;
+    padding: 13px 10px;
+    text-align: center;
+}
+
+.update table td {
+    padding: 12px 10px;
+    border: 1px solid #dfe5ec;
+    vertical-align: middle;
+}
+
+.update table td:last-child {
+    text-align: center;
+    font-weight: 700;
+}
+
+.update table tr:nth-child(even) {
+    background: #f7faff;
+}
+
+/* Important Links */
+.update p a {
+    display: inline-block;
+    color: #0757c9;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.update p a:hover {
+    color: #dc3545;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #17202a;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 35px 15px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,.25);
+    margin: 20px 0;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .latest-updates {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .latest-updates > h2:first-child {
+        font-size: 21px;
+    }
+
+    .update {
+        padding: 18px;
+    }
+
+    .update h2 {
+        margin: -18px -18px 18px -18px;
+        font-size: 19px;
+    }
+
+    .update table {
+        font-size: 14px;
+    }
+
+    .update table th,
+    .update table td {
+        padding: 9px 6px;
+    }
+}
 <footer class="footer">
 
     <div class="footer-content">
