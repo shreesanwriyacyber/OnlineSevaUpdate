@@ -3,8 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Latest Jobs - OnlineSevaUpdate</title>
+<title>Latest Government Jobs - OnlineSevaUpdate</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+    .jobs-page {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .jobs-page h2 {
+        text-align: center;
+        color: #1267e8;
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .job-card {
+        background: #fff;
+        border-radius: 14px;
+        padding: 25px;
+        margin-bottom: 22px;
+        box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+        border-left: 5px solid #1267e8;
+    }
+
+    .job-card h3 {
+        margin: 0 0 12px;
+        color: #1267e8;
+        font-size: 24px;
+    }
+
+    .job-card p {
+        margin: 8px 0;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .last-date {
+        color: #d62828 !important;
+        font-weight: bold;
+    }
+
+    .job-buttons {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .job-buttons a {
+        display: inline-block;
+        padding: 11px 18px;
+        border-radius: 7px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        background: #1267e8;
+    }
+
+    .job-buttons a.apply {
+        background: #ff9800;
+    }
+
+    .job-buttons a.pdf {
+        background: #e53935;
+    }
+
+    .job-buttons a:hover {
+        opacity: 0.88;
+    }
+
+    @media (max-width: 600px) {
+        .jobs-page h2 {
+            font-size: 28px;
+        }
+
+        .job-card h3 {
+            font-size: 20px;
+        }
+
+        .job-buttons a {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -14,25 +100,51 @@
     <p>OnlineSevaUpdate</p>
 </header>
 
-<section class="latest-updates">
+<section class="jobs-page">
 
     <h2>Latest Jobs</h2>
 
-    <div class="update">
-        <a href="job-details.html">
-    AAI Manager & Junior Executive Recruitment 2026
-</a>
-        <p>Last Date : 25 Aug 2026</p>
+    <!-- AAI JOB -->
+    <div class="job-card">
+        <h3>AAI Manager & Junior Executive Recruitment 2026</h3>
+
+        <p><strong>Organization:</strong> Airports Authority of India (AAI)</p>
+        <p><strong>Total Posts:</strong> 389</p>
+        <p><strong>Application Start:</strong> 08 August 2026</p>
+        <p class="last-date"><strong>Last Date:</strong> 07 September 2026</p>
+
+        <div class="job-buttons">
+            <a href="job-details.html">📄 View Full Details</a>
+
+            <!-- Apply link: replace # with official AAI application URL -->
+            <a class="apply" href="#" target="_blank" rel="noopener">📝 Apply Online</a>
+
+            <!-- PDF link: replace # with uploaded notification PDF filename -->
+            <a class="pdf" href="#" target="_blank" rel="noopener">📥 Notification PDF</a>
+        </div>
     </div>
 
-    <div class="update">
-        <a href="ssc-chsl.html">SSC CHSL Recruitment 2026</a>
-        <p>Last Date : 10 Sep 2026</p>
+    <!-- SSC CHSL -->
+    <div class="job-card">
+        <h3>SSC CHSL Recruitment 2026</h3>
+
+        <p><strong>Exam:</strong> SSC CHSL 2026</p>
+        <p class="last-date"><strong>Last Date:</strong> 10 September 2026</p>
+
+        <div class="job-buttons">
+            <a href="ssc-chsl.html">📄 View Details</a>
+        </div>
     </div>
 
-    <div class="update">
-       <a href="mp-patwari.html">MP Patwari Vacancy</a>
-        <p>Coming Soon</p>
+    <!-- MP PATWARI -->
+    <div class="job-card">
+        <h3>MP Patwari Vacancy</h3>
+
+        <p><strong>Status:</strong> Coming Soon</p>
+
+        <div class="job-buttons">
+            <a href="mp-patwari.html">📄 View Details</a>
+        </div>
     </div>
 
 </section>
