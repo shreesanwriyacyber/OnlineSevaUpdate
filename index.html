@@ -322,10 +322,16 @@ function searchWebsite() {
         }
     ];
 
-    const found = pages.find(page =>
-        page.name.toLowerCase().includes(query) ||
-        page.keywords.some(keyword => keyword.includes(query))
-    );
+    const found = pages.find(page => {
+    const text = (
+        page.name + " " +
+        page.keywords.join(" ")
+    ).toLowerCase();
+
+    return query
+        .split(/\s+/)
+        .every(word => text.includes(word));
+});
 
     if (found) {
         window.location.href = found.url;
